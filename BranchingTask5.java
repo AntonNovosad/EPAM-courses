@@ -10,10 +10,10 @@ public class BranchingTask5 {
         Scanner num = new Scanner(System.in);
         int x = num.nextInt();
 
-        if (x <= 3){
+        if (x <= 3) {
             System.out.println(" Если х <= 3, F(x) = " + (Math.pow(x, 2) - 3 * x + 9));
         } else {
-            System.out.println("Если х > 3, F(x) = " + (1/(Math.pow(x, 3) + 6)));
+            System.out.println("Если х > 3, F(x) = " + (1 / (Math.pow(x, 3) + 6)));
         }
 
     }

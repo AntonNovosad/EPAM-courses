@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class BranchingTask2 {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
-        int a,b,c,d;
+        int a, b, c, d;
         System.out.println("Введите значение а: ");
         a = num.nextInt();
         System.out.println("Введите значение b: ");

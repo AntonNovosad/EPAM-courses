@@ -11,7 +11,7 @@ public class CycleTask1 {
         System.out.println("Введите любое положительное число: ");
         int a = num.nextInt();
         int sum = 0;
-        for (int i = 1; i <= a; i++){
+        for (int i = 1; i <= a; i++) {
             sum += i;
         }
         System.out.println("Сумма всех чисел = " + sum);
