@@ -18,7 +18,6 @@ public class Arrays6 {
                 }
             }
             if (b) {
-                System.out.println(i); //Вывод простых чисел
                 sum += array[i];
             } // Сумма значений простых числе i
             else b = true;
