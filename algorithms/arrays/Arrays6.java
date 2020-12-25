@@ -22,7 +22,7 @@ public class Arrays6 {
             } // Сумма значений простых числе i
             else b = true;
         }
-        System.out.println(sum);
+        System.out.println("Сумма значений простых чисел = " + sum);
     }
 }
 
