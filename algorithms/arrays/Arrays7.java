@@ -21,7 +21,7 @@ public class Arrays7 {
             }
         }
         System.out.println(Arrays.toString(array));
-        System.out.println(max);
+        System.out.println("Максимально число последовательности = " + max);
     }
 }
 
