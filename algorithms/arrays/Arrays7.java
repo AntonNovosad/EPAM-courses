@@ -1,18 +1,28 @@
 /*
 Даны действительные числа A1, A2, ..., An.
-Найти max(A1 + A2n,A2 + A2n-1,...,An + An+1)
+Найти max(A[1] + A[2n],A[2] + A[2n-1],...,A[n] + A[n+1])
  */
 
 package algorithms.arrays;
 
+import java.util.Arrays;
+
 public class Arrays7 {
     public static void main(String[] args) {
-        double[] array = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0};
-        double max;
-        for (int i = 1; i < array.length; i++){
-            max = Math.max(array[i]+array[2*i],array[i+1]+array[2*i-1]);
-            System.out.println(max);
+        int n = 5;
+        double[] array = new double[2 * n];
+        double max = 0;
+        for (int i = 0; i < array.length; i++) {
+            array[i] += i;
         }
+        for (int j = 0; j < n; j++) {
+            if (array[j] + array[(2 * n - 1) - j] > max) {
+                max = array[j] + array[(2 * n - 1) - j]; // максимум
+            }
+        }
+        System.out.println(Arrays.toString(array));
+        System.out.println(max);
     }
 }
+
 
