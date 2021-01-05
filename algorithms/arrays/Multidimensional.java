@@ -22,11 +22,14 @@ public class Multidimensional {
                 array[i][j] = num.nextInt();
             }
         }
+
         System.out.println("Столбцы матрицы по условию: ");
         for (int i = 0; i < n; i++) {
+            System.out.println();
             for (int j = 0; j < m; j += 2) {
                 if (array[0][j] > array[n - 1][j]) {
-                    System.out.println(array[i][j] + "\t");
+                    System.out.print(array[i][j] + "\t");
+
                 }
             }
         }
