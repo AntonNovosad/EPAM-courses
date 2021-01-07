@@ -17,6 +17,7 @@ public class Multidimensional4 {
         int n;
         int[][] array;
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите размер матрицы(n - четное): ");
         n = scanner.nextInt();
         array = new int[n][n];
         for (int i = 0; i < n; i++) {
