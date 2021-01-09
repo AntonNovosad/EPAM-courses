@@ -1,4 +1,4 @@
-package algorithms.arrays;
+package algorithms.multidimensional;
 
 import java.util.Scanner;
 

@@ -3,7 +3,7 @@
 Вывести k-ю строку и p-й столбец матрицы.
  */
 
-package algorithms.arrays;
+package algorithms.multidimensional;
 
 import java.util.Scanner;
 

@@ -3,7 +3,7 @@
 Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего.
  */
 
-package algorithms.arrays;
+package algorithms.multidimensional;
 
 import java.util.Scanner;
 

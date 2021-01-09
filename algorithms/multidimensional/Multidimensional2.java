@@ -3,7 +3,7 @@
 Вывести на экран элементы, стоящие на диагонали.
  */
 
-package algorithms.arrays;
+package algorithms.multidimensional;
 
 import java.util.Scanner;
 

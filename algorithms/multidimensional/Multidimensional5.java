@@ -8,7 +8,7 @@
 (N, 0, 0,..., 0, 0, 0)
  */
 
-package algorithms.arrays;
+package algorithms.multidimensional;
 
 import java.util.Scanner;
 
