@@ -14,14 +14,16 @@ import java.util.Scanner;
 
 public class Multidimensional5 {
     public static void main(String[] args) {
-        int n;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размер матрицы: ");
-        n = scanner.nextInt();
-        solutionMultidimensional5(n);
+        int n = scanner.nextInt();
+
+        int[][] array = solutionMultidimensional5(n);
+
+        MultidimensionalUtils.printIntMatrix(array);
     }
 
-    private static void solutionMultidimensional5(int n) {
+    private static int[][] solutionMultidimensional5(int n) {
         int[][] array = new int[n][n];
         for (int i = 0; i < n; i++) {
             System.out.println();
@@ -30,8 +32,8 @@ public class Multidimensional5 {
                 if (j >= n - i) {
                     array[i][j] = 0;
                 }
-                System.out.print(array[i][j] + " ");
             }
         }
+        return array;
     }
 }
