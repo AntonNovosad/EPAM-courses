@@ -9,11 +9,11 @@ public class Multidimensional12 {
     public static void main(String[] args) {
         int columnsQuantity = MultidimensionalUtils.inputMatrixColumnsQuantity();
         int rowsQuantity = MultidimensionalUtils.inputMatrixRowsQuantity();
-        int[][] matrix = new int[columnsQuantity][rowsQuantity];
+        int[][] matrix = new int[rowsQuantity][columnsQuantity];
         int max = 10;
         int min = -10;
-        for (int i = 0; i < columnsQuantity; i++) {
-            for (int j = 0; j < rowsQuantity; j++) {
+        for (int i = 0; i < rowsQuantity; i++) {
+            for (int j = 0; j < columnsQuantity; j++) {
                 matrix[i][j] = randomInt(max, min);
             }
         }
