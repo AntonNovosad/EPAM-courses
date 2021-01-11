@@ -1,3 +1,7 @@
+/*
+Отсортировать строки матрицы по возрастанию и убыванию.
+ */
+
 package algorithms.multidimensional;
 
 
@@ -15,8 +19,11 @@ public class Multidimensional12 {
         }
         System.out.println("Изначальная матрица: ");
         MultidimensionalUtils.printIntMatrix(matrix);
+        sortInsertionMatrixSolution(matrix);
+        System.out.println("Отсортированная матрица по убыванию: ");
+        MultidimensionalUtils.printIntMatrix(matrix);
         sortBubbleMatrixSolution(matrix);
-        System.out.println("Отсортированная матрица: ");
+        System.out.println("Отсортированная матрица по возрастанию: ");
         MultidimensionalUtils.printIntMatrix(matrix);
     }
 
@@ -25,7 +32,7 @@ public class Multidimensional12 {
         for (int i = 0; i < matrix.length; i++) {
             for (int h = 0; h < matrix[i].length; h++) {
                 for (int j = 0; j < matrix[i].length - 1; j++) {
-                    if (matrix[i][j] < matrix[i][j + 1]) {
+                    if (matrix[i][j] > matrix[i][j + 1]) {
                         int temp = matrix[i][j];
                         matrix[i][j] = matrix[i][j + 1];
                         matrix[i][j + 1] = temp;
