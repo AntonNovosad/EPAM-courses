@@ -32,3 +32,15 @@ public class MultidimensionalUtils {
         }
     }
 }
+
+
+// ctrl + left mouse навигация
+// ctrl + shift + f - поиск полнотекстный по всем файлам
+// ctrl + f - поиск по файлу
+// shift-shift - поиск по именам файлов
+// alt + enter - предложения ide
+// ctrl + alt + l - автоформатирование
+// ctrl + r - поиск и замена в файле
+// ctrl + shift + r - поиск и замена по всем файлам
+// shift + F6 - перименование
+// среднее колесико
