@@ -27,15 +27,14 @@ public class Multidimensional11 {
     private static void findIndexSameNumbers(int[][] matrix) {
         int counter;
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                counter = findSameNumbers(j, matrix[i]);
+                counter = findSameNumbers(i, matrix[i]);
                 if (counter >= 3) {
                     int index = i + 1;
                     System.out.println("В " + index + "-й строке выполняется условие");
                 }
             }
         }
-    }
+
 
     private static int findSameNumbers(int unsortedIndex, int[] array) {
         int counter = 0;
